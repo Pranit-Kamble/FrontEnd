@@ -4,7 +4,7 @@
 }
 .fitcon{
     margin-top: 10px;
-    height: 440px;
+    height: 453px;
     padding: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -16,6 +16,7 @@
     text-align: center;
     margin-left: 20px;
     background-color: gainsboro;
+    border: 5px ridge black;
 }
 .fitpara{
     margin-bottom: 0px;

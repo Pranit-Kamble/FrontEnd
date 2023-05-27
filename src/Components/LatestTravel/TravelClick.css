@@ -5,16 +5,24 @@
 }
 .singletrvelimg{
     height: 60vh;
-    width: 50%;
+    width: fit-content;
+    border: 20px ridge black;
 }
 .singletravelpara{
-    width:50vw;
-    text-align: center;
+    padding: 40px;
+    border-left: 10px ridge #79E0EE;
+    border-right: 10px ridge #79E0EE;
+    width:60vw;
+    text-align: left;
     /* background-color: aqua; */
     
 }
 @media (max-width:800px) {
-    .singletrvelimg{
-       width: 90%;
+    /* .singletrvelimg{ */
+       /* width: 90%; */
+    /* } */
+    .singletravelpara{
+        width: 90vw;
+        padding: 10px;
     }
 }

@@ -21,6 +21,7 @@ const LatestTechno = () => {
               <img className='technoimg' src={index.img} alt="" />
               <h3>{index.name}</h3>
               <p className='technopara'>{index.para}</p>
+              <div> <b>Technology/</b> August 21/7/2000</div>
               </div>
               </Link>
             )

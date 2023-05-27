@@ -23,6 +23,7 @@ const LatestFit = () => {
                 <img className='fitimg' src={index.img} alt="" />
                 <h3>{index.name}</h3>
                 <p className='fitpara'>{index.para}</p>
+                <div> <b>Anime/</b> August 21/7/2000</div>
             </div>
                </Link>
               )

@@ -12,8 +12,11 @@ a{
     text-decoration: none;
     color: black;
 }
-a:visited{
-    color: black;
+/* a:visited{ */
+    /* color: black; */
+/* } */
+.isActive{
+    color: red;
 }
 li{
     margin-top: 10px;

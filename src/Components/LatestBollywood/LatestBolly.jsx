@@ -15,7 +15,7 @@ const LatestBolly = () => {
   console.log(data)
 
   return (
-    <div>
+    <>
       {data &&
         data.map((index,value)=>{
           if(index.catagory==='bollywood'){
@@ -34,7 +34,7 @@ const LatestBolly = () => {
           }
         })
       }
-    </div>
+    </>
   
     
   )

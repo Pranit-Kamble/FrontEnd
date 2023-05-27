@@ -22,6 +22,7 @@ const LatestTravel = () => {
               <img className='tarvelimg' src={index.img} alt="" />
               <h3>{index.name}</h3>
               <p className='travelpara'>{index.para}</p>
+              <div> <b>Travel/</b> August 21/7/2000</div>
             </div>
             </Link>
             )

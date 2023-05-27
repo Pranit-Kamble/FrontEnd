@@ -1,3 +1,11 @@
+.latesttravel{
+    width: 85vw;
+    display: flex;
+    gap: 20px;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
 .travel{
     /* margin-top: 20x; */
     background-color: gainsboro;
@@ -7,6 +15,7 @@
     margin: 20px;
     width: 300px;
     text-align: center;
+    padding-bottom: 10px;
 }
 .travel:hover{
     box-shadow: 10px 10px 2px gray;
@@ -32,4 +41,23 @@
     -webkit-line-clamp:4;
     -webkit-box-orient: vertical;
     margin: 20px;
+}
+
+@media (max-width:900px) {
+    .tarvelimg{
+        width: 250px;
+        margin: 0px;
+    }
+    .travel{
+        margin: 0px;
+        width: 250px;
+    }
+    .travelpara{
+        margin: 10px;
+    }
+    .travel:not(:hover){
+        height: 400px; 
+        width: 280px;
+        transition: all linear 0.3s;
+    }
 }
