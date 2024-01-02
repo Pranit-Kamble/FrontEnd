@@ -7,6 +7,7 @@ import './App.css'
 const App = () => {
   return (
     <div>
+
       <Navbar/>
       <RoutesFile/>
       <div className='copy'>© Pranit Kamble</div>

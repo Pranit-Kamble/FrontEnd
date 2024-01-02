@@ -1,17 +1,14 @@
 *{
-    /* outline: 2px solid; */
     box-sizing: border-box;
 }
 .header{
     /* display: none; */
     /* background-color: black; */
-    /* display: grid;
+    display: grid;
     grid-template-columns: auto auto  ; 
-    grid-template-rows: auto auto auto; */
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-rows: auto auto auto;
     gap: 10px;
-    /* padding: 10px; */
+    padding: 10px;
     width: fit-content;
     /* column-gap: 140px; */
     color: white;
@@ -19,81 +16,47 @@
    
 }
 .item{
-    overflow: hidden;
     width: 40vw;
     text-align:center;
     background-image: url('https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg');
     border-radius: 5px;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     box-shadow: 5px 5px 10px gray;
-    /* background-color: aqua; */
-    transition: all ease-in-out 0.5s;
-    align-items: center;
+    background-color: aqua;
     
 }
-.item1:hover{
-    width: 43vw;
-    height: 460px;
-    padding-top: 200px;
-}
-/* .item:hover{ */
-    /* background-size: contain; */
-    /* width: 45vw;
-} */
 .item1{
-    padding-top: 300px;
     /* width:500px; */
     height: 450px;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg');
-    /* grid-column: 1/2;
-    grid-row: 1/3; */
+    grid-column: 1/2;
+    grid-row: 1/3;
   
-}
-.headerbox2{
-    /* padding-top: 10px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
 }
 .item2{
     width: 30vw;
-    height: 220px;
-    /* grid-column: 2/3;
-    grid-row: 1/2; */
-}
-.item2:hover,.item3:hover{
-    width: 32vw;
-    height: 240px;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 .item3{
-    height: 210px;
     width: 30vw;
-    /* grid-column: 2/3;
-    grid-row: 2/3; */
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
-/* .text{ */
-    /* position: relative;
-    top: 310px; */
-/* } */
+.text{
+    position: relative;
+    top: 310px;
+}
 .text2{
     position: relative;
     top: 75px;
 }
 
 @media (max-width:700px) {
-    .header{
-        flex-direction: column;
-        align-items: center;
-    }
-    .headerbox1{
-        align-items: center;
-    }
     .item{
         height: 480px;
-        width: 100vw;
+        width: 80vw;
     }
     .item2{
         display: none;

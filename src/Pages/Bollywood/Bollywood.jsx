@@ -3,9 +3,7 @@ import LatestBolly from '../../Components/LatestBollywood/LatestBolly'
 import './Bollywood.css'
 import TopBollywood from '../../Components/LatestBollywood/TopBollywood'
 
-
 const Bollywood = () => {
-
   return (
   <div className='home'>
     <div className='homebolly'>

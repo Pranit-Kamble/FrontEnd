@@ -4,7 +4,7 @@
 }
 .foodcon{
     margin-top: 10px;
-    height: 366px;
+    height: 356px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -15,7 +15,6 @@
     text-align: center;
     margin-left: 20px;
     background-color: gainsboro;
-    border: 5px ridge ;
 }
 .technopara{
     padding: 10px;
@@ -28,10 +27,4 @@
 }
 .foodimgtop{
     height: 130px;
-}
-
-@media (max-width:600px) {
-    .foodcon{
-        width: 250px;
-    }
 }

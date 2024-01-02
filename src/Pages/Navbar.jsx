@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -27,12 +27,12 @@ const Navbar = () => {
      
       
          <ul type='none'> 
-        <NavLink to='./'><li>Home</li></NavLink>
-        <NavLink to='./bollywood'><li>Bollywood</li></NavLink>
-        <NavLink to='./technology'><li>Technology</li></NavLink>
-        <NavLink to='./hollywood'><li>Hollywood</li></NavLink>
-        <NavLink to='./fitness'><li>Anime</li></NavLink>
-        <NavLink to='./food'><li>Food</li></NavLink>
+        <Link to='./'><li>Home</li></Link>
+        <Link to='./bollywood'><li>Bollywood</li></Link>
+        <Link to='./technology'><li>Technology</li></Link>
+        <Link to='./hollywood'><li>Hollywood</li></Link>
+        <Link to='./fitness'><li>Anime</li></Link>
+        <Link to='./food'><li>Food</li></Link>
       </ul>  
       
      

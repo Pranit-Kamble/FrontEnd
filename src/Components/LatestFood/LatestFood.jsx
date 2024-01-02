@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React, { useContext } from 'react'
+import { Data } from '../CreateContext/contextdata'
 import './LatestFood.css'
 import { Link } from 'react-router-dom'
 
 const LatestFood = () => {
-
-  const [data,setdata]=useState('')
-  useEffect(()=>{
-    axios.get('https://blog-backend-aim5.onrender.com/food')
-    .then((res)=>setdata(res.data))
-  },[])
+  const data=useContext(Data)
   return (
    <div className='hometechno'>
-    {data &&
+    {
       data.map((index,value)=>{
         if(index.catagory==='food'){
           return (

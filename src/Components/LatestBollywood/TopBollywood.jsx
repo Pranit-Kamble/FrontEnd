@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
+import { Data } from '../CreateContext/contextdata'
 import './LatestBolly.css'
 
 const TopBollywood = () => {
-  const[data,setdata]=useState('')
-  useEffect(()=>{
-    axios.get('https://blog-backend-aim5.onrender.com/bollywood')
-    .then((res)=>setdata(res.data))
-  },[])
-  console.log(data)
+    const data= useContext(Data)
     return (
         <div>
-          {data &&
+          {
             data.map((index,value)=>{
               if(index.catagory==='bollywood'){
                 return (

@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import './travel.css'
+import { Data } from '../CreateContext/contextdata'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
 
 const LatestTravel = () => {
- 
-  const [data,setdata]=useState('')
-  useEffect(()=>{
-    axios.get('https://blog-backend-aim5.onrender.com/travel')
-    .then((res)=>setdata(res.data))
-  },[])
+  const data= useContext(Data)
+  console.log(data)
   return (
 
     <div className='latesttravel'>
-      {data &&
+      {
         data.map((index,value)=>{
           if(index.catagory==='travel'){
             return (
@@ -22,7 +18,6 @@ const LatestTravel = () => {
               <img className='tarvelimg' src={index.img} alt="" />
               <h3>{index.name}</h3>
               <p className='travelpara'>{index.para}</p>
-              <div> <b>Travel/</b> August 21/7/2000</div>
             </div>
             </Link>
             )

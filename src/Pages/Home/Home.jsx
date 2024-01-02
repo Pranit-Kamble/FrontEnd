@@ -11,16 +11,18 @@ import LatestFood from '../../Components/LatestFood/LatestFood'
 
 const Home = () => {
 
+  // console.log(data.bollywood.post1.img)
+  
   return (
     <div className='home'>
-      <a href="#travel"><Header/></a>
+      <Header/>
       <br />
    
-      <h1 id='travel'>Latest Travel<hr style={{border:'2px solid brown'}} /> </h1>
-      <div  className='latesttravel'>
+      <h1>Latest Travel<hr style={{border:'2px solid brown'}} /> </h1>
+      <div className='latesttravel'>
       <LatestTravel/>
       </div>
-      <hr style={{borderTop:'20px ridge black',borderRadius:'0%',width:'100%',marginTop:'20px'}}/>
+      <br />
       <h2>Latest Bollywood Stories <hr style={{border:'2px solid brown'}} /></h2>
       <div className='homebolly'>
         <div className='box box1'>
@@ -29,12 +31,12 @@ const Home = () => {
         </div>
         <div className='box box2'>Advertisement</div>
       </div>
-      <hr style={{borderTop:'20px ridge black',borderRadius:'0%',width:'100%',marginTop:'20px'}}/>
+      <br />
       <h2>Latest Technology <hr style={{border:'2px solid brown'}} /></h2>
       <div className='hometechno'>
         <LatestTechno/>
       </div>
-      <hr style={{borderTop:'20px ridge black',borderRadius:'0%',width:'100%',marginTop:'20px'}}/>
+      <br />
       <h2>Latest Hollywood Stories <hr style={{border:'2px solid brown'}} /></h2>
       <div className='homebolly'>
         <div className='box box1'>
@@ -42,12 +44,12 @@ const Home = () => {
         </div>
         <div className='box box2'>Advertisement</div>
       </div>
-      <hr style={{borderTop:'20px ridge black',borderRadius:'0%',width:'100%',marginTop:'20px'}}/>
+      <br />
       <h2>All Time Best Anime <hr style={{border:'2px solid brown'}} /></h2>
       <div className='hometechno'>
      <LatestFit/>
       </div>
-      <hr style={{borderTop:'20px ridge black',borderRadius:'0%',width:'100%',marginTop:'20px'}}/>
+      <br />
       <h2>Latest Food <hr style={{border:'2px solid brown'}} /></h2>
       <div className='hometechno'>
       <LatestFood/>

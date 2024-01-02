@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
+import { Data } from '../CreateContext/contextdata'
 
 const TopTechnology = () => {
-    
-    const [data,setdata]=useState('')
-    useEffect(()=>{
-      axios.get('https://blog-backend-aim5.onrender.com/technology')
-      .then((res)=>setdata(res.data))
-    },[])
+    const data=useContext(Data)
     return (
         <div className='hometechno'>
-          {data &&
+          {
             data.map((index,value)=>{
               if(index.catagory==='technology'){
                 return(
