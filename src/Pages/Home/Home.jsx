@@ -1,60 +1,47 @@
 import React from 'react'
 import './Home.css'
-import Header from '../../Components/Header/Header'
-import LatestTravel from '../../Components/LatestTravel/LatestTravel'
-import LatestBolly from '../../Components/LatestBollywood/LatestBolly'
-import LatestTechno from '../../Components/LatestTechno/LatestTechno'
-import LatestHolly from '../../Components/LatestHolly/LatestHolly'
-import LatestFit from '../../Components/LatestFitness/LatestFit'
-import LatestFood from '../../Components/LatestFood/LatestFood'
+import BlogPost from '../../Components/BlogPost/BlogPost'
+import Landing from '../../Components/Landing/Landing'
+import PostPage from '../../Components/PostPage/PostPage'
 
 
 const Home = () => {
-
   // console.log(data.bollywood.post1.img)
   
   return (
     <div className='home'>
-      <Header/>
-      <br />
-   
-      <h1>Latest Travel<hr style={{border:'2px solid brown'}} /> </h1>
-      <div className='latesttravel'>
-      <LatestTravel/>
-      </div>
-      <br />
-      <h2>Latest Bollywood Stories <hr style={{border:'2px solid brown'}} /></h2>
-      <div className='homebolly'>
-        <div className='box box1'>
-       <LatestBolly/>
+      {/* <Header/> */}
       
-        </div>
-        <div className='box box2'>Advertisement</div>
+      <Landing/>
+      <h1 id='travel'>Best of Travel </h1>
+      <div  className='latesttravel'>
+      <BlogPost imgWidth='250px' name = 'travel' />
       </div>
-      <br />
-      <h2>Latest Technology <hr style={{border:'2px solid brown'}} /></h2>
-      <div className='hometechno'>
-        <LatestTechno/>
+
+      <h1 id='bollywood'>Best of Bollywood</h1>
+      <div  className='latesttravel'>
+      <BlogPost imgWidth='200px' name = 'bollywood' />
       </div>
-      <br />
-      <h2>Latest Hollywood Stories <hr style={{border:'2px solid brown'}} /></h2>
-      <div className='homebolly'>
-        <div className='box box1'>
-       <LatestHolly/>
-        </div>
-        <div className='box box2'>Advertisement</div>
+
+      <h1  id='hollywood'>Best of Hollywood </h1>
+      <div className='latesttravel'>
+      <BlogPost imgWidth='200px' name = 'hollywood' />
       </div>
-      <br />
-      <h2>All Time Best Anime <hr style={{border:'2px solid brown'}} /></h2>
-      <div className='hometechno'>
-     <LatestFit/>
+
+      <h1 id='technology'>Best of Technology</h1>
+      <div  className='latesttravel'>
+      <BlogPost imgWidth='250px' name = 'technology' />
       </div>
-      <br />
-      <h2>Latest Food <hr style={{border:'2px solid brown'}} /></h2>
-      <div className='hometechno'>
-      <LatestFood/>
+
+      <h1 id='food'>Best of Food </h1>
+      <div  className='latesttravel'>
+      <BlogPost imgWidth='250px' name = 'food' />
       </div>
-      <br /><br />
+
+      <h1 id='fitness'>Best of Anime </h1>
+      <div className='latesttravel'>
+      <BlogPost imgWidth='200px' name = 'fitness' />
+      </div>
       
     </div>
   )

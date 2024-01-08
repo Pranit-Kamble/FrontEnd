@@ -1,9 +1,27 @@
 *{
     box-sizing: border-box;
 }
-.home{
-    /* display: none; */
+h1{
+    color: white;
+    /* background-color: black; */
+    /* color: white; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 320px;
+    font-size: 40px;
+}
+.home{
+    padding-bottom: 100px;
+    background-color: rgba(158,162,171,255);
+    /* display: none; */
+    /* margin-top: 123px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0px;
 }
 .latesttravel{
     display: flex;
@@ -48,7 +66,13 @@
     flex-wrap: wrap;
 }
 
-@media (max-width:800px) {
+@media (max-width:700px) {
+    .home{
+        gap: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
     .latesttravel{
         flex-direction: column;
         align-items: center;

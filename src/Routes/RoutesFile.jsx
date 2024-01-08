@@ -8,6 +8,7 @@ import Home from '../Pages/Home/Home'
 import Technology from '../Pages/Technology/Technology'
 import TravelClick from '../Components/LatestTravel/TravelClick'
 import { Data,data } from '../Components/CreateContext/contextdata'
+import PostPage from '../Components/PostPage/PostPage'
 
 
 
@@ -19,6 +20,7 @@ const RoutesFile = () => {
         <Data.Provider value={data}>
         <Routes>
             <Route path='/' element={<Home/>}>Home</Route>
+            <Route path='/postpage' element={<PostPage/>}></Route>
             <Route path='/bollywood' element={<Bollywood/>}>Bollywood</Route>
             <Route path='/technology' element={<Technology/>}>Technology</Route>
             <Route path='/hollywood' element={<Hollywood/>}>Hollywood</Route>

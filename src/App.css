@@ -1,11 +1,7 @@
-.copy{
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    position: fixed;
-    top: 0px;
-    /* right: 0px; */
-    width: 30vw;
+*{
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  /* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
 }
